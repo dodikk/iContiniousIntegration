@@ -1,0 +1,7 @@
+build
+.git
+*.pbxuser
+*.mode1v3
+xcuserdata
+*.xcworkspace
+.DS_store
