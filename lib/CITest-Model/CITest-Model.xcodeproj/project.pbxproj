@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53993901138A535B0056A99A /* CITMathCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 539938FF138A535B0056A99A /* CITMathCore.h */; };
+		53993902138A535B0056A99A /* CITMathCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 53993900138A535B0056A99A /* CITMathCore.m */; };
 		AA747D9F0F9514B9006C5449 /* CITest_Model_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CITest_Model_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		539938FF138A535B0056A99A /* CITMathCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITMathCore.h; sourceTree = "<group>"; };
+		53993900138A535B0056A99A /* CITMathCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITMathCore.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* CITest_Model_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITest_Model_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCITest_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCITest_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				539938FF138A535B0056A99A /* CITMathCore.h */,
+				53993900138A535B0056A99A /* CITMathCore.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -79,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* CITest_Model_Prefix.pch in Headers */,
+				53993901138A535B0056A99A /* CITMathCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53993902138A535B0056A99A /* CITMathCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

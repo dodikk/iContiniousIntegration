@@ -17,8 +17,8 @@
 		5365F588138A4967005D611C /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5365F586138A4967005D611C /* MainWindow_iPhone.xib */; };
 		5365F58C138A4967005D611C /* CITestAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F58B138A4967005D611C /* CITestAppDelegate_iPad.m */; };
 		5365F58F138A4967005D611C /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5365F58D138A4967005D611C /* MainWindow_iPad.xib */; };
-		5365F5B1138A4E30005D611C /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5B0138A4E30005D611C /* GHUnitIOS.framework */; };
-		5365F5B6138A4EBD005D611C /* libCITest_Model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5B5138A4EBD005D611C /* libCITest_Model.a */; };
+		53993917138A53B50056A99A /* libCITest_Model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5AF138A4E0C005D611C /* libCITest_Model.a */; };
+		53993921138A546E0056A99A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53993920138A546E0056A99A /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,7 @@
 		5365F58B138A4967005D611C /* CITestAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CITestAppDelegate_iPad.m; path = iPad/CITestAppDelegate_iPad.m; sourceTree = "<group>"; };
 		5365F58E138A4967005D611C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model.xcodeproj"; path = "../../lib/CITest-Model/CITest-Model.xcodeproj"; sourceTree = "<group>"; };
-		5365F5B0138A4E30005D611C /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
-		5365F5B5138A4EBD005D611C /* libCITest_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCITest_Model.a; sourceTree = SOURCE_ROOT; };
+		53993920138A546E0056A99A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = /Users/Oleksandr_Dodatko/Projects/team/iContiniousIntegration/frameworks/GHUnitIOS.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5365F5B6138A4EBD005D611C /* libCITest_Model.a in Frameworks */,
+				53993917138A53B50056A99A /* libCITest_Model.a in Frameworks */,
 				5365F571138A4967005D611C /* UIKit.framework in Frameworks */,
 				5365F573138A4967005D611C /* Foundation.framework in Frameworks */,
 				5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */,
-				5365F5B1138A4E30005D611C /* GHUnitIOS.framework in Frameworks */,
+				53993921138A546E0056A99A /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +78,6 @@
 		5365F561138A4966005D611C = {
 			isa = PBXGroup;
 			children = (
-				5365F5B5138A4EBD005D611C /* libCITest_Model.a */,
-				5365F5B0138A4E30005D611C /* GHUnitIOS.framework */,
 				5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */,
 				5365F576138A4967005D611C /* CITest */,
 				5365F56F138A4967005D611C /* Frameworks */,
@@ -102,6 +99,7 @@
 				5365F570138A4967005D611C /* UIKit.framework */,
 				5365F572138A4967005D611C /* Foundation.framework */,
 				5365F574138A4967005D611C /* CoreGraphics.framework */,
+				53993920138A546E0056A99A /* GHUnitIOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
