@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5365F571138A4967005D611C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F570138A4967005D611C /* UIKit.framework */; };
+		5365F573138A4967005D611C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F572138A4967005D611C /* Foundation.framework */; };
+		5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F574138A4967005D611C /* CoreGraphics.framework */; };
+		5365F57B138A4967005D611C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5365F579138A4967005D611C /* InfoPlist.strings */; };
+		5365F57E138A4967005D611C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F57D138A4967005D611C /* main.m */; };
+		5365F581138A4967005D611C /* CITestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F580138A4967005D611C /* CITestAppDelegate.m */; };
+		5365F585138A4967005D611C /* CITestAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F584138A4967005D611C /* CITestAppDelegate_iPhone.m */; };
+		5365F588138A4967005D611C /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5365F586138A4967005D611C /* MainWindow_iPhone.xib */; };
+		5365F58C138A4967005D611C /* CITestAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F58B138A4967005D611C /* CITestAppDelegate_iPad.m */; };
+		5365F58F138A4967005D611C /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5365F58D138A4967005D611C /* MainWindow_iPad.xib */; };
+		5365F5B1138A4E30005D611C /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5B0138A4E30005D611C /* GHUnitIOS.framework */; };
+		5365F5B6138A4EBD005D611C /* libCITest_Model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5B5138A4EBD005D611C /* libCITest_Model.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5365F5AE138A4E0C005D611C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "CITest-Model";
+		};
+		5365F5B3138A4EAC005D611C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "CITest-Model";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5365F56C138A4967005D611C /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5365F570138A4967005D611C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5365F572138A4967005D611C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5365F574138A4967005D611C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5365F578138A4967005D611C /* CITest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CITest-Info.plist"; sourceTree = "<group>"; };
+		5365F57A138A4967005D611C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5365F57C138A4967005D611C /* CITest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CITest-Prefix.pch"; sourceTree = "<group>"; };
+		5365F57D138A4967005D611C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5365F57F138A4967005D611C /* CITestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CITestAppDelegate.h; sourceTree = "<group>"; };
+		5365F580138A4967005D611C /* CITestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CITestAppDelegate.m; sourceTree = "<group>"; };
+		5365F583138A4967005D611C /* CITestAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CITestAppDelegate_iPhone.h; path = iPhone/CITestAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		5365F584138A4967005D611C /* CITestAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CITestAppDelegate_iPhone.m; path = iPhone/CITestAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		5365F587138A4967005D611C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		5365F58A138A4967005D611C /* CITestAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CITestAppDelegate_iPad.h; path = iPad/CITestAppDelegate_iPad.h; sourceTree = "<group>"; };
+		5365F58B138A4967005D611C /* CITestAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CITestAppDelegate_iPad.m; path = iPad/CITestAppDelegate_iPad.m; sourceTree = "<group>"; };
+		5365F58E138A4967005D611C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model.xcodeproj"; path = "../../lib/CITest-Model/CITest-Model.xcodeproj"; sourceTree = "<group>"; };
+		5365F5B0138A4E30005D611C /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
+		5365F5B5138A4EBD005D611C /* libCITest_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCITest_Model.a; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5365F569138A4967005D611C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5365F5B6138A4EBD005D611C /* libCITest_Model.a in Frameworks */,
+				5365F571138A4967005D611C /* UIKit.framework in Frameworks */,
+				5365F573138A4967005D611C /* Foundation.framework in Frameworks */,
+				5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */,
+				5365F5B1138A4E30005D611C /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5365F561138A4966005D611C = {
+			isa = PBXGroup;
+			children = (
+				5365F5B5138A4EBD005D611C /* libCITest_Model.a */,
+				5365F5B0138A4E30005D611C /* GHUnitIOS.framework */,
+				5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */,
+				5365F576138A4967005D611C /* CITest */,
+				5365F56F138A4967005D611C /* Frameworks */,
+				5365F56D138A4967005D611C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5365F56D138A4967005D611C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5365F56C138A4967005D611C /* CITest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5365F56F138A4967005D611C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5365F570138A4967005D611C /* UIKit.framework */,
+				5365F572138A4967005D611C /* Foundation.framework */,
+				5365F574138A4967005D611C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5365F576138A4967005D611C /* CITest */ = {
+			isa = PBXGroup;
+			children = (
+				5365F57F138A4967005D611C /* CITestAppDelegate.h */,
+				5365F580138A4967005D611C /* CITestAppDelegate.m */,
+				5365F582138A4967005D611C /* iPhone */,
+				5365F589138A4967005D611C /* iPad */,
+				5365F577138A4967005D611C /* Supporting Files */,
+			);
+			path = CITest;
+			sourceTree = "<group>";
+		};
+		5365F577138A4967005D611C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5365F578138A4967005D611C /* CITest-Info.plist */,
+				5365F579138A4967005D611C /* InfoPlist.strings */,
+				5365F57C138A4967005D611C /* CITest-Prefix.pch */,
+				5365F57D138A4967005D611C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5365F582138A4967005D611C /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				5365F583138A4967005D611C /* CITestAppDelegate_iPhone.h */,
+				5365F584138A4967005D611C /* CITestAppDelegate_iPhone.m */,
+				5365F586138A4967005D611C /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		5365F589138A4967005D611C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				5365F58A138A4967005D611C /* CITestAppDelegate_iPad.h */,
+				5365F58B138A4967005D611C /* CITestAppDelegate_iPad.m */,
+				5365F58D138A4967005D611C /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		5365F5A8138A4E0B005D611C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5365F5AF138A4E0C005D611C /* libCITest_Model.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5365F56B138A4967005D611C /* CITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5365F592138A4967005D611C /* Build configuration list for PBXNativeTarget "CITest" */;
+			buildPhases = (
+				5365F568138A4967005D611C /* Sources */,
+				5365F569138A4967005D611C /* Frameworks */,
+				5365F56A138A4967005D611C /* Resources */,
+				5365F595138A4CE8005D611C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5365F5B4138A4EAC005D611C /* PBXTargetDependency */,
+			);
+			name = CITest;
+			productName = CITest;
+			productReference = 5365F56C138A4967005D611C /* CITest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5365F563138A4966005D611C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "EPAM systems";
+			};
+			buildConfigurationList = 5365F566138A4966005D611C /* Build configuration list for PBXProject "CITest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5365F561138A4966005D611C;
+			productRefGroup = 5365F56D138A4967005D611C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5365F5A8138A4E0B005D611C /* Products */;
+					ProjectRef = 5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5365F56B138A4967005D611C /* CITest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5365F5AF138A4E0C005D611C /* libCITest_Model.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCITest_Model.a;
+			remoteRef = 5365F5AE138A4E0C005D611C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5365F56A138A4967005D611C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5365F57B138A4967005D611C /* InfoPlist.strings in Resources */,
+				5365F588138A4967005D611C /* MainWindow_iPhone.xib in Resources */,
+				5365F58F138A4967005D611C /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5365F595138A4CE8005D611C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n#/bin/bash\n#\n## Dump XCode variables\n\nmkdir -p \"/tmp/CITestBuild\"\nCI_TEST_PRODUCT_DIR_FILE=/tmp/CITestBuild/CI_TEST_PRODUCT_DIR.txt\necho $BUILT_PRODUCTS_DIR > \"$CI_TEST_PRODUCT_DIR_FILE\"\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5365F568138A4967005D611C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5365F57E138A4967005D611C /* main.m in Sources */,
+				5365F581138A4967005D611C /* CITestAppDelegate.m in Sources */,
+				5365F585138A4967005D611C /* CITestAppDelegate_iPhone.m in Sources */,
+				5365F58C138A4967005D611C /* CITestAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5365F5B4138A4EAC005D611C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CITest-Model";
+			targetProxy = 5365F5B3138A4EAC005D611C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5365F579138A4967005D611C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5365F57A138A4967005D611C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5365F586138A4967005D611C /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5365F587138A4967005D611C /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5365F58D138A4967005D611C /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5365F58E138A4967005D611C /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5365F590138A4967005D611C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5365F591138A4967005D611C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5365F593138A4967005D611C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CITest/CITest-Prefix.pch";
+				INFOPLIST_FILE = "CITest/CITest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5365F594138A4967005D611C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CITest/CITest-Prefix.pch";
+				INFOPLIST_FILE = "CITest/CITest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5365F566138A4966005D611C /* Build configuration list for PBXProject "CITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5365F590138A4967005D611C /* Debug */,
+				5365F591138A4967005D611C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5365F592138A4967005D611C /* Build configuration list for PBXNativeTarget "CITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5365F593138A4967005D611C /* Debug */,
+				5365F594138A4967005D611C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5365F563138A4966005D611C /* Project object */;
+}
