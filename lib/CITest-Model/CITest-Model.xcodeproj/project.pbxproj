@@ -147,7 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n#/bin/bash\n#\n## Dump XCode variables\n\nmkdir -p \"/tmp/CITestBuild\"\nCI_TEST_LIB_PRODUCT_DIR_FILE=/tmp/CITestBuild/CI_TEST_LIB_PRODUCT_DIR.txt\necho $BUILT_PRODUCTS_DIR > \"$CI_TEST_LIB_PRODUCT_DIR_FILE\"\n\nexit 0";
+			shellScript = "#\n#/bin/bash\n#\n## Dump XCode variables\n\nmkdir -p \"/tmp/CITestBuild\"\nCI_TEST_LIB_PRODUCT_DIR_FILE=/tmp/CITestBuild/CI_TEST_LIB_PRODUCT_DIR.txt\n\ncd $BUILT_PRODUCTS_DIR\necho $PWD > \"$CI_TEST_LIB_PRODUCT_DIR_FILE\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
