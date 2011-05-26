@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53367634138CE3FB00947BE1 /* libCITest_Model_Universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53367633138CE3FB00947BE1 /* libCITest_Model_Universal.a */; };
+		5336765B138CE4BF00947BE1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5336765A138CE4BF00947BE1 /* GHUnitIOS.framework */; };
 		5365F571138A4967005D611C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F570138A4967005D611C /* UIKit.framework */; };
 		5365F573138A4967005D611C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F572138A4967005D611C /* Foundation.framework */; };
 		5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F574138A4967005D611C /* CoreGraphics.framework */; };
 		5365F57B138A4967005D611C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5365F579138A4967005D611C /* InfoPlist.strings */; };
 		5365F57E138A4967005D611C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F57D138A4967005D611C /* main.m */; };
+		53888EDA138A870700AC83E8 /* StaticLibraryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53888ED9138A870700AC83E8 /* StaticLibraryTest.m */; };
 		53993917138A53B50056A99A /* libCITest_Model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5AF138A4E0C005D611C /* libCITest_Model.a */; };
-		53993921138A546E0056A99A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53993920138A546E0056A99A /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +33,25 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = "CITest-Model";
 		};
+		538CB078138CD5D800FF15DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "CITest-Model-Universal";
+		};
+		53A666D0138CF6B80007E6ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5336761F138CE34F00947BE1;
+			remoteInfo = BuildUniversal;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53367633138CE3FB00947BE1 /* libCITest_Model_Universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCITest_Model_Universal.a; path = "../../frameworks/CITest-Model-Universal/Lib/libCITest_Model_Universal.a"; sourceTree = SOURCE_ROOT; };
+		5336765A138CE4BF00947BE1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../frameworks/GHUnitIOS.framework; sourceTree = SOURCE_ROOT; };
 		5365F56C138A4967005D611C /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5365F570138A4967005D611C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5365F572138A4967005D611C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,7 +61,8 @@
 		5365F57C138A4967005D611C /* CITest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CITest-Prefix.pch"; sourceTree = "<group>"; };
 		5365F57D138A4967005D611C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model.xcodeproj"; path = "../../lib/CITest-Model/CITest-Model.xcodeproj"; sourceTree = "<group>"; };
-		53993920138A546E0056A99A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = /Users/Oleksandr_Dodatko/Projects/team/iContiniousIntegration/frameworks/GHUnitIOS.framework; sourceTree = "<absolute>"; };
+		53888ED9138A870700AC83E8 /* StaticLibraryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryTest.m; sourceTree = "<group>"; };
+		538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model-Universal.xcodeproj"; path = "../../lib/CITest-Model-Universal/CITest-Model-Universal.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53367634138CE3FB00947BE1 /* libCITest_Model_Universal.a in Frameworks */,
 				53993917138A53B50056A99A /* libCITest_Model.a in Frameworks */,
 				5365F571138A4967005D611C /* UIKit.framework in Frameworks */,
 				5365F573138A4967005D611C /* Foundation.framework in Frameworks */,
 				5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */,
-				53993921138A546E0056A99A /* GHUnitIOS.framework in Frameworks */,
+				5336765B138CE4BF00947BE1 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 		5365F561138A4966005D611C = {
 			isa = PBXGroup;
 			children = (
+				53367633138CE3FB00947BE1 /* libCITest_Model_Universal.a */,
+				538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */,
 				5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */,
 				5365F576138A4967005D611C /* CITest */,
 				5365F56F138A4967005D611C /* Frameworks */,
@@ -83,10 +105,10 @@
 		5365F56F138A4967005D611C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5336765A138CE4BF00947BE1 /* GHUnitIOS.framework */,
 				5365F570138A4967005D611C /* UIKit.framework */,
 				5365F572138A4967005D611C /* Foundation.framework */,
 				5365F574138A4967005D611C /* CoreGraphics.framework */,
-				53993920138A546E0056A99A /* GHUnitIOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5365F577138A4967005D611C /* Supporting Files */,
+				53888ED9138A870700AC83E8 /* StaticLibraryTest.m */,
 			);
 			path = CITest;
 			sourceTree = "<group>";
@@ -118,6 +141,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		538CB075138CD5D800FF15DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				538CB079138CD5D800FF15DB /* libCITest_Model_Universal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,12 +159,13 @@
 				5365F568138A4967005D611C /* Sources */,
 				5365F569138A4967005D611C /* Frameworks */,
 				5365F56A138A4967005D611C /* Resources */,
-				5365F595138A4CE8005D611C /* ShellScript */,
+				5365F595138A4CE8005D611C /* DumpXCodeVariables */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5365F5B4138A4EAC005D611C /* PBXTargetDependency */,
+				53A666D1138CF6B80007E6ED /* PBXTargetDependency */,
 			);
 			name = CITest;
 			productName = CITest;
@@ -160,6 +192,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 538CB075138CD5D800FF15DB /* Products */;
+					ProjectRef = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
+				},
+				{
 					ProductGroup = 5365F5A8138A4E0B005D611C /* Products */;
 					ProjectRef = 5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */;
 				},
@@ -179,6 +215,13 @@
 			remoteRef = 5365F5AE138A4E0C005D611C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		538CB079138CD5D800FF15DB /* libCITest_Model_Universal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCITest_Model_Universal.a;
+			remoteRef = 538CB078138CD5D800FF15DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -193,13 +236,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5365F595138A4CE8005D611C /* ShellScript */ = {
+		5365F595138A4CE8005D611C /* DumpXCodeVariables */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = DumpXCodeVariables;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5365F57E138A4967005D611C /* main.m in Sources */,
+				53888EDA138A870700AC83E8 /* StaticLibraryTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +269,11 @@
 			isa = PBXTargetDependency;
 			name = "CITest-Model";
 			targetProxy = 5365F5B3138A4EAC005D611C /* PBXContainerItemProxy */;
+		};
+		53A666D1138CF6B80007E6ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BuildUniversal;
+			targetProxy = 53A666D0138CF6B80007E6ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -243,15 +293,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "../../frameworks/CITest-Model-Universal/Lib";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -261,13 +318,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "../../frameworks/CITest-Model-Universal/Lib";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -281,6 +345,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../frameworks\"",
+					"\"$(SRCROOT)/../../test/ghunit/Examples/MyTestable-IPhone/Libraries\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -289,6 +354,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../frameworks/CITest-Model-Universal/Lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -303,6 +369,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../frameworks\"",
+					"\"$(SRCROOT)/../../test/ghunit/Examples/MyTestable-IPhone/Libraries\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CITest/CITest-Prefix.pch";
@@ -310,6 +377,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../frameworks/CITest-Model-Universal/Lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

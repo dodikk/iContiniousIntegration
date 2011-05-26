@@ -6,19 +6,33 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5336761F138CE34F00947BE1 /* BuildUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 53367629138CE36500947BE1 /* Build configuration list for PBXAggregateTarget "BuildUniversal" */;
+			buildPhases = (
+				5336761E138CE34F00947BE1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BuildUniversal;
+			productName = BuildUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		53993901138A535B0056A99A /* CITMathCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 539938FF138A535B0056A99A /* CITMathCore.h */; };
-		53993902138A535B0056A99A /* CITMathCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 53993900138A535B0056A99A /* CITMathCore.m */; };
-		AA747D9F0F9514B9006C5449 /* CITest_Model_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CITest_Model_Prefix.pch */; };
+		538CB08E138CD64200FF15DB /* CITUMathCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 538CB08C138CD64200FF15DB /* CITUMathCore.h */; };
+		538CB08F138CD64200FF15DB /* CITUMathCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CB08D138CD64200FF15DB /* CITUMathCore.m */; };
+		AA747D9F0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		539938FF138A535B0056A99A /* CITMathCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITMathCore.h; sourceTree = "<group>"; };
-		53993900138A535B0056A99A /* CITMathCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITMathCore.m; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* CITest_Model_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITest_Model_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		538CB08C138CD64200FF15DB /* CITUMathCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITUMathCore.h; sourceTree = "<group>"; };
+		538CB08D138CD64200FF15DB /* CITUMathCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITUMathCore.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITest_Model_Universal_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libCITest_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCITest_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libCITest_Model_Universal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCITest_Model_Universal.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +50,12 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* libCITest_Model.a */,
+				D2AAC07E0554694100DB518D /* libCITest_Model_Universal.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0867D691FE84028FC02AAC07 /* CITest-Model */ = {
+		0867D691FE84028FC02AAC07 /* CITest-Model-Universal */ = {
 			isa = PBXGroup;
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -49,7 +63,7 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "CITest-Model";
+			name = "CITest-Model-Universal";
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -63,8 +77,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				539938FF138A535B0056A99A /* CITMathCore.h */,
-				53993900138A535B0056A99A /* CITMathCore.m */,
+				538CB08C138CD64200FF15DB /* CITUMathCore.h */,
+				538CB08D138CD64200FF15DB /* CITUMathCore.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -72,7 +86,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AA747D9E0F9514B9006C5449 /* CITest_Model_Prefix.pch */,
+				AA747D9E0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -84,30 +98,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747D9F0F9514B9006C5449 /* CITest_Model_Prefix.pch in Headers */,
-				53993901138A535B0056A99A /* CITMathCore.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch in Headers */,
+				538CB08E138CD64200FF15DB /* CITUMathCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D2AAC07D0554694100DB518D /* CITest-Model */ = {
+		D2AAC07D0554694100DB518D /* CITest-Model-Universal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CITest-Model" */;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CITest-Model-Universal" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
-				5365F5B2138A4E47005D611C /* DumpXCodeVariables */,
+				538CB12C138CD7E000FF15DB /* DumpXCodeVariables */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "CITest-Model";
-			productName = "CITest-Model";
-			productReference = D2AAC07E0554694100DB518D /* libCITest_Model.a */;
+			name = "CITest-Model-Universal";
+			productName = "CITest-Model-Universal";
+			productReference = D2AAC07E0554694100DB518D /* libCITest_Model_Universal.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +129,7 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CITest-Model" */;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CITest-Model-Universal" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -125,18 +139,32 @@
 				French,
 				German,
 			);
-			mainGroup = 0867D691FE84028FC02AAC07 /* CITest-Model */;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CITest-Model-Universal */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* CITest-Model */,
+				D2AAC07D0554694100DB518D /* CITest-Model-Universal */,
+				5336761F138CE34F00947BE1 /* BuildUniversal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5365F5B2138A4E47005D611C /* DumpXCodeVariables */ = {
+		5336761E138CE34F00947BE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../../scripts\n\n./BuildUniversalLibrary.sh ${BUILD_STYLE}\nexit 0";
+		};
+		538CB12C138CD7E000FF15DB /* DumpXCodeVariables */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n#/bin/bash\n#\n## Dump XCode variables\n\nmkdir -p \"/tmp/CITestBuild\"\nCI_TEST_LIB_PRODUCT_DIR_FILE=/tmp/CITestBuild/CI_TEST_LIB_PRODUCT_DIR.txt\n\ncd $BUILT_PRODUCTS_DIR\ncd ..\necho $PWD > \"$CI_TEST_LIB_PRODUCT_DIR_FILE\"\n\nexit 0";
+			shellScript = "#\n#/bin/bash\n#\n## Dump XCode variables\n\nmkdir -p \"/tmp/CITestBuild\"\nCI_TEST_UNIVERSAL_LIB_PRODUCT_DIR_FILE=/tmp/CITestBuild/CI_TEST_UNIVERSAL_LIB_PRODUCT_DIR.txt\n\ncd \"$BUILT_PRODUCTS_DIR\"\ncd ..\necho $PWD > \"$CI_TEST_UNIVERSAL_LIB_PRODUCT_DIR_FILE\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -157,7 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53993902138A535B0056A99A /* CITMathCore.m in Sources */,
+				538CB08F138CD64200FF15DB /* CITUMathCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,15 +198,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/CITest_Model.dst;
+				DSTROOT = /tmp/CITest_Model_Universal.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CITest_Model_Prefix.pch;
+				GCC_PREFIX_HEADER = CITest_Model_Universal_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = CITest_Model;
+				PRODUCT_NAME = CITest_Model_Universal;
 			};
 			name = Debug;
 		};
@@ -187,12 +215,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/CITest_Model.dst;
+				DSTROOT = /tmp/CITest_Model_Universal.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CITest_Model_Prefix.pch;
+				GCC_PREFIX_HEADER = CITest_Model_Universal_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = CITest_Model;
+				PRODUCT_NAME = CITest_Model_Universal;
 			};
 			name = Release;
 		};
@@ -204,10 +232,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -220,19 +245,37 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		53367620138CE34F00947BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = BuildUniversal;
+			};
+			name = Debug;
+		};
+		53367621138CE34F00947BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = BuildUniversal;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CITest-Model" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CITest-Model-Universal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
@@ -241,11 +284,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CITest-Model" */ = {
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CITest-Model-Universal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53367629138CE36500947BE1 /* Build configuration list for PBXAggregateTarget "BuildUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53367620138CE34F00947BE1 /* Debug */,
+				53367621138CE34F00947BE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
