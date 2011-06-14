@@ -15,7 +15,7 @@ LIB_NAME=libCITest_Model_Universal.a
 
 LIB_ROOT_DIR=$PROJECT_ROOT/lib/CITest-Model-Universal
 
-DEPLOYMENT_HEADERS_DIR=$PROJECT_ROOT/frameworks/CITest-Model-Universal/include
+DEPLOYMENT_HEADERS_DIR=$PROJECT_ROOT/frameworks/CITest-Model-Universal/include/CITest-Model-Universal
 DEPLOYMENT_BINARY_DIR=$PROJECT_ROOT/frameworks/CITest-Model-Universal/Lib
 
 cd "$LIB_ROOT_DIR"
