@@ -350,6 +350,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CITest/CITest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../lib,
+					"../../frameworks/CITest-Model-Universal/include",
+				);
 				INFOPLIST_FILE = "CITest/CITest-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,6 +377,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CITest/CITest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../lib,
+					"../../frameworks/CITest-Model-Universal/include",
+				);
 				INFOPLIST_FILE = "CITest/CITest-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
