@@ -22,7 +22,7 @@ cd "$LAUNCH_DIR"
 ######################
 /bin/bash "$PWD/CleanTestReports.sh"
 
-"$TOOLS_DIR/iphonesim" launch "$DEPLOYMENT_DIR/CITest.app" 4.2 ipad
+"$TOOLS_DIR/iphonesim" launch "$DEPLOYMENT_DIR/CITest.app" 5.0 ipad
 
 /bin/bash "$PWD/CopyTestReports.sh"
 /bin/bash "$PWD/KillSimulator.sh"

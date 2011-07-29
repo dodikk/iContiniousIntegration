@@ -5,7 +5,7 @@
 
 PROJECT_NAME=CITest
 TARGET_NAME=CITest
-OS_VERSION=4.3
+OS_VERSION=5.0
 ###
 
 LAUNCH_DIR=$PWD
@@ -24,7 +24,8 @@ cd "../deployment"
 cd "$LAUNCH_DIR"
 ###
 
-DEVELOPER_NAME="iPhone Developer: Oleksandr Dodatko (ABCDEFG123456)"
+#DEVELOPER_NAME="iPhone Developer: Oleksandr Dodatko (ABCDEFG123456)"
+DEVELOPER_NAME="iPhone Developer: Nick Hencher (T248B93756)"
 PROVISONING_PROFILE=$CERTIFICATES_DIR/CITest.mobileprovision
 BUILD_DIR=$(cat /tmp/CITestBuild/CI_TEST_PRODUCT_DIR.txt)
 
@@ -41,7 +42,7 @@ cd "$PROJECT_DIR"
     echo $BUILD_CMD_DEVICE
     $BUILD_CMD_DEVICE
     
-    /usr/bin/xcrun -sdk iphoneos PackageApplication -v "${BUILD_DIR}/Release-iphoneos/${PROJECT_NAME}.app" -o "${DEPLOYMENT_DIR}/${PROJECT_NAME}.ipa" --sign "${DEVELOPER_NAME}" --embed "${PROVISONING_PROFILE}"
+    /usr/bin/xcrun -sdk iphoneos PackageApplication -v "${BUILD_DIR}/Release-iphoneos/${PROJECT_NAME}.app" -o "${DEPLOYMENT_DIR}/${PROJECT_NAME}.ipa" #--sign "${DEVELOPER_NAME}" --embed "${PROVISONING_PROFILE}"
 cd "$LAUNCH_DIR"
 
 

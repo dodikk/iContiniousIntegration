@@ -18,6 +18,17 @@
 			name = BuildUniversal;
 			productName = BuildUniversal;
 		};
+		5388228813E30CDF00671DC5 /* BuildFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5388229113E30CE700671DC5 /* Build configuration list for PBXAggregateTarget "BuildFramework" */;
+			buildPhases = (
+				5388228713E30CDF00671DC5 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BuildFramework;
+			productName = BuildFrameworks;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -28,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		538822B413E30E6900671DC5 /* Framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Framework.plist; sourceTree = "<group>"; };
 		538CB08C138CD64200FF15DB /* CITUMathCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITUMathCore.h; sourceTree = "<group>"; };
 		538CB08D138CD64200FF15DB /* CITUMathCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITUMathCore.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITest_Model_Universal_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -86,6 +98,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				538822B413E30E6900671DC5 /* Framework.plist */,
 				AA747D9E0F9514B9006C5449 /* CITest_Model_Universal_Prefix.pch */,
 			);
 			name = "Other Sources";
@@ -146,6 +159,7 @@
 			targets = (
 				D2AAC07D0554694100DB518D /* CITest-Model-Universal */,
 				5336761F138CE34F00947BE1 /* BuildUniversal */,
+				5388228813E30CDF00671DC5 /* BuildFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +177,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd ../../scripts\n\n./BuildUniversalLibrary.sh ${BUILD_STYLE}\nexit 0";
+			showEnvVarsInLog = 0;
+		};
+		5388228713E30CDF00671DC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../../scripts\n\n./BuildUniversalLibrary.sh ${BUILD_STYLE}\n./iOSFramework.sh ${BUILD_STYLE}\nexit 0";
+			showEnvVarsInLog = 0;
 		};
 		538CB12C138CD7E000FF15DB /* DumpXCodeVariables */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -272,6 +301,27 @@
 			};
 			name = Release;
 		};
+		5388228913E30CDF00671DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = BuildFrameworks;
+			};
+			name = Debug;
+		};
+		5388228A13E30CDF00671DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = BuildFrameworks;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +348,15 @@
 			buildConfigurations = (
 				53367620138CE34F00947BE1 /* Debug */,
 				53367621138CE34F00947BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5388229113E30CE700671DC5 /* Build configuration list for PBXAggregateTarget "BuildFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5388228913E30CDF00671DC5 /* Debug */,
+				5388228A13E30CDF00671DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

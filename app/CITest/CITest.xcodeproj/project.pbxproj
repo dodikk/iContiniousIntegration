@@ -14,6 +14,7 @@
 		5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F574138A4967005D611C /* CoreGraphics.framework */; };
 		5365F57B138A4967005D611C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5365F579138A4967005D611C /* InfoPlist.strings */; };
 		5365F57E138A4967005D611C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F57D138A4967005D611C /* main.m */; };
+		538822AC13E30DE300671DC5 /* CITestModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538822AB13E30DE300671DC5 /* CITestModel.framework */; };
 		53888EDA138A870700AC83E8 /* StaticLibraryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53888ED9138A870700AC83E8 /* StaticLibraryTest.m */; };
 		53993917138A53B50056A99A /* libCITest_Model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365F5AF138A4E0C005D611C /* libCITest_Model.a */; };
 /* End PBXBuildFile section */
@@ -33,19 +34,19 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = "CITest-Model";
 		};
+		5388229713E30D2000671DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5388228813E30CDF00671DC5 /* BuildFrameworks */;
+			remoteInfo = BuildFrameworks;
+		};
 		538CB078138CD5D800FF15DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = "CITest-Model-Universal";
-		};
-		53A666D0138CF6B80007E6ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5336761F138CE34F00947BE1;
-			remoteInfo = BuildUniversal;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +62,7 @@
 		5365F57C138A4967005D611C /* CITest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CITest-Prefix.pch"; sourceTree = "<group>"; };
 		5365F57D138A4967005D611C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5365F5A7138A4E0B005D611C /* CITest-Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model.xcodeproj"; path = "../../lib/CITest-Model/CITest-Model.xcodeproj"; sourceTree = "<group>"; };
+		538822AB13E30DE300671DC5 /* CITestModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CITestModel.framework; path = ../../frameworks/CITestModel.framework; sourceTree = SOURCE_ROOT; };
 		53888ED9138A870700AC83E8 /* StaticLibraryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryTest.m; sourceTree = "<group>"; };
 		538CB074138CD5D800FF15DB /* CITest-Model-Universal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CITest-Model-Universal.xcodeproj"; path = "../../lib/CITest-Model-Universal/CITest-Model-Universal.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				5365F573138A4967005D611C /* Foundation.framework in Frameworks */,
 				5365F575138A4967005D611C /* CoreGraphics.framework in Frameworks */,
 				5336765B138CE4BF00947BE1 /* GHUnitIOS.framework in Frameworks */,
+				538822AC13E30DE300671DC5 /* CITestModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 		5365F56F138A4967005D611C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				538822AB13E30DE300671DC5 /* CITestModel.framework */,
 				5336765A138CE4BF00947BE1 /* GHUnitIOS.framework */,
 				5365F570138A4967005D611C /* UIKit.framework */,
 				5365F572138A4967005D611C /* Foundation.framework */,
@@ -165,7 +169,7 @@
 			);
 			dependencies = (
 				5365F5B4138A4EAC005D611C /* PBXTargetDependency */,
-				53A666D1138CF6B80007E6ED /* PBXTargetDependency */,
+				5388229813E30D2000671DC5 /* PBXTargetDependency */,
 			);
 			name = CITest;
 			productName = CITest;
@@ -270,10 +274,10 @@
 			name = "CITest-Model";
 			targetProxy = 5365F5B3138A4EAC005D611C /* PBXContainerItemProxy */;
 		};
-		53A666D1138CF6B80007E6ED /* PBXTargetDependency */ = {
+		5388229813E30D2000671DC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BuildUniversal;
-			targetProxy = 53A666D0138CF6B80007E6ED /* PBXContainerItemProxy */;
+			name = BuildFrameworks;
+			targetProxy = 5388229713E30D2000671DC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
